@@ -1,0 +1,17 @@
+{
+  "name": "thomasboom89/captainhook-collection",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/ThomasBoom89/captainhook-collection/issues",
+    "source": "https://github.com/ThomasBoom89/captainhook-collection"
+  },
+  "authors": [
+    {
+      "name": "ThomasBoom89",
+      "email": "51998416+ThomasBoom89@users.noreply.github.com",
+      "homepage": "https://github.com/ThomasBoom89/captainhook-collection",
+      "role": "Owner"
+    }
+  ],
+  "require": {}
+}
