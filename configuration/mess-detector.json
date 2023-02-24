@@ -3,7 +3,7 @@
 		"enabled": true,
 		"actions": [
 			{
-				"action": "vendor/bin/phpmd {$STAGED_FILES|of-type:php|seperated-by:,} text cleancode,codesize,controversial,design,naming,unusedcode --suffixes php",
+				"action": "vendor/bin/phpmd {$STAGED_FILES|of-type:php|separated-by:,} text cleancode,codesize,controversial,design,naming,unusedcode --suffixes php",
 				"options": [],
 				"conditions": [
 					{
