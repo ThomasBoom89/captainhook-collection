@@ -1,12 +1,19 @@
 {
-    "pre-commit": {
-        "enabled": true,
-        "actions": [
-            {
-                "action": "vendor/bin/phpmd {$STAGED_FILES|of-type:php|seperated-by:,} text cleancode,codesize,controversial,design,naming,unusedcode --suffixes php",
-                "options": [],
-                "conditions": []
-            }
-        ]
-    }
+	"pre-commit": {
+		"enabled": true,
+		"actions": [
+			{
+				"action": "vendor/bin/phpmd {$STAGED_FILES|of-type:php|seperated-by:,} text cleancode,codesize,controversial,design,naming,unusedcode --suffixes php",
+				"options": [],
+				"conditions": [
+					{
+						"exec": "\\CaptainHook\\App\\Hook\\Condition\\FileStaged\\OfType",
+						"args": [
+							"php"
+						]
+					}
+				]
+			}
+		]
+	}
 }
